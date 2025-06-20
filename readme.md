@@ -6,7 +6,7 @@ An end-to-end task management application built for **performance**, **scalabili
 
 ## 🌐 Live Demo
 
-    🧪 **Demo** - https://taskmanagery.netlify.app
+    🧪 https://taskmanagery.netlify.app
 
 
 

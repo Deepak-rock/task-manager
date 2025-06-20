@@ -1,28 +1,42 @@
 # 🚀 Task Manager Frontend
 
+
 A sleek, scalable Task Management application built with **Next.js 14** (App Router) and **React.js**, designed to connect seamlessly with a **Node.js**/**Express**/**PostgreSQL** backend.
+
+## 🌐 Live Demo
+
+    🧪 https://taskmanagery.netlify.app
+
 
 ## ⚙️ Tech Stack
 
-Frontend	Tooling
-  **Next.js** (App Router)	Routing & SSR/SSG
-  **React.js**	Component Architecture
-  **Custom CSS**	Styling
-  **Fetch	API** Integration
-  **.env**	Environment Variables
+
+### Frontend (Next.js 14)
+
+- **Next.js (App Router)** – Routing, SSR/SSG
+
+- **React.js** – Component architecture
+
+- **Custom CSS**  – Styling
+
+- **Fetch** – API calls
+
+- **.env** – Environment variables
 
 ---
 
 ## 🔍 Project Structure
 
-  src/
-    ├── app/
-    │   ├── add/             → Add Task Page
-    │   ├── edit/[id]/       → Edit Task Page
-    │   ├── Home/            → Home Dashboard
-    │   └── components/      → TaskCard & TaskForm
-    ├── public/              → Static Files
-    └── styles/              → Global Styles
+ src/
+ ├── app/
+ │   ├── add/       
+ │   ├── edit/[id]/       
+ │   ├── Home/       
+ │   └── components/             
+ ├── public/
+ └── styles/
+
+---
 
 ### 🚀 Setup Instructions
 
@@ -31,34 +45,39 @@ Frontend	Tooling
   ```bash
   git clone https://github.com/your-username/task-manager-frontend.git
 
-2. **Install Dependencies**
 
-  ```bash
-  npm install
+2. **Install dependencies**
 
-3. **Configure Environment**
-   
-    Create a .env file in the root with the following:
+    ```bash
+    npm install
+
+
+3. **Configure environment**
+
+    Create .env:
+
     API_BASE_URL=https://task-manager-backend-e6vm.onrender.com/tasks
 
-4. **Start Development Server**
 
-  ```bash
-  npm run dev
-  
-  Access at http://localhost:3000
+4. **Run locally**: 
+
+    npm run dev
+    Access: http://localhost:3000
+
 
   
 ## 🧩 Pages Overview
 
-  | Route        | Description              |
-  | ------------ | ------------------------ |
-  | `/`          | Dashboard with task list |
-  | `/add`       | Form to add a new task   |
-  | `/edit/[id]` | Edit existing task       |
+    |   Path     |      Description        |
+    |   ----     |   -----------------     |
+    | /          |   Dashboard (task list) |
+    | /add       |   Add new task          |
+    | /edit/[id] |   Edit existing task    |
 
+### Frontend (/frontend/package.json)
 
-## 📦 Build for Production
-
-  npm run build
-  npm start
+    "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+    }
